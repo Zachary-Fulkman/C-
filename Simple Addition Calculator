@@ -1,11 +1,13 @@
 // See https://aka.ms/new-console-template for more information
 
+
+using System.Data;
 using System.Globalization;
 using System.Threading.Channels;
 
 
-int myNumber1 = 0;
-int myNumber2 = 0;
+double myNumber1 = 0.0;
+double myNumber2 = 0.0;
 
 Console.WriteLine("Enter a number!");
 
@@ -21,7 +23,33 @@ myNumber2 = double.Parse(userInput, CultureInfo.InvariantCulture);
 double sum = myNumber1 + myNumber2;
 sum = Math.Round(sum, 2);
 
-Console.WriteLine($"The result of {myNumber1.ToString(CultureInfo.InvariantCulture)} " +
-    $"and {myNumber2.ToString(CultureInfo.InvariantCulture)} is {sum.ToString(CultureInfo.InvariantCulture)}");
-
+Console.WriteLine($"The result of adding {myNumber1.ToString(CultureInfo.InvariantCulture)} " +
+    $"and {myNumber2.ToString(CultureInfo.InvariantCulture)} is {sum.ToString(CultureInfo.InvariantCulture)} Press any key to clear previous and move on to subtraction");
 Console.ReadKey();
+Console.Clear();
+
+
+double subtracted = myNumber1 - myNumber2;
+subtracted = Math.Round(subtracted, 2);
+
+Console.WriteLine($"The result of subtracting {myNumber1.ToString(CultureInfo.InvariantCulture)} " +
+    $"and {myNumber2.ToString(CultureInfo.InvariantCulture)} is {subtracted.ToString(CultureInfo.InvariantCulture)} Press any key to clear previous and move on to multiplication");
+Console.ReadKey();
+Console.Clear();
+
+double multiplied = myNumber1 * myNumber2;
+multiplied = Math.Round(multiplied, 2);
+
+Console.WriteLine($"The result of multiplying {myNumber1.ToString(CultureInfo.InvariantCulture)} " +
+    $"and {myNumber2.ToString(CultureInfo.InvariantCulture)} is {multiplied.ToString(CultureInfo.InvariantCulture)} Press any key to clear previous and move on to division");
+Console.ReadKey();
+Console.Clear();
+
+double divided = myNumber1 / myNumber2;
+divided = Math.Round(divided, 2);
+
+Console.WriteLine($"The result of dividing {myNumber1.ToString(CultureInfo.InvariantCulture)} " +
+    $"and {myNumber2.ToString(CultureInfo.InvariantCulture)} is {divided.ToString(CultureInfo.InvariantCulture)}");
+Console.WriteLine("Press any key to close console.");
+Console.ReadKey();
+Console.Clear();
