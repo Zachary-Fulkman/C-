@@ -1,0 +1,38 @@
+int AddTwoValues(int value1, int value2)
+{
+    int result = value1 + value2;
+    return result;
+}
+
+
+int myAddResult = AddTwoValues(5,10);
+Console.WriteLine("The result is " + myAddResult);
+
+int SubtractTwoValues(int value1, int value2)
+{
+    int result = value1 - value2;
+    return result;
+}
+
+int mySubtractResult = SubtractTwoValues(5, 10);
+Console.WriteLine("The result is " + mySubtractResult);
+
+int MultiplyTwoValues(int value1, int value2)
+{
+    int result = value1 * value2;
+    return result;
+}
+
+int myMultiplyResult = MultiplyTwoValues(5, 10);
+Console.WriteLine("The result is " + myMultiplyResult);
+
+int DivideTwoValues(int value1, int value2)
+{
+    int result = value1 / value2;
+    return result;
+}
+
+int myDivideResult = DivideTwoValues(5, 10);
+Console.WriteLine("The result is " + myDivideResult);
+
+Console.ReadKey();
