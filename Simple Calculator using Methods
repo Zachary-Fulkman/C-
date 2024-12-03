@@ -4,20 +4,21 @@ namespace OldStyle
     {
         static void Main(string[] args)
         {
-            
-
-            int myAddResult = AddTwoValues(5, 10);
+            Console.WriteLine("Enter your numbers!");
+            int value1 = int.Parse(Console.ReadLine());
+            int value2 = int.Parse(Console.ReadLine());
+            int myAddResult = AddTwoValues(value1, value2);
             Console.WriteLine("The result is " + myAddResult);
 
 
-            int mySubtractResult = SubtractTwoValues(5, 10);
+            int mySubtractResult = SubtractTwoValues(value1, value2);
             Console.WriteLine("The result is " + mySubtractResult);
 
 
-            int myMultiplyResult = MultiplyTwoValues(5, 10);
+            int myMultiplyResult = MultiplyTwoValues(value1, value2);
             Console.WriteLine("The result is " + myMultiplyResult);
 
-            int myDivideResult = DivideTwoValues(5, 10);
+            int myDivideResult = DivideTwoValues(value1, value2);
             Console.WriteLine("The result is " + myDivideResult);
 
             Console.ReadKey();
